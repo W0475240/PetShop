@@ -1,0 +1,149 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container mt-4 mb-3">
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner rounded-4">
+            <div class="carousel-item active">
+                <img src="~/img/slider/slider-1.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="~/img/slider/slider-2.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="~/img/slider/slider-3.jpg" class="d-block w-100">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
+<section id="feature" class="mb-3">
+    <div class="container px-4 py-5 bg-warning rounded-3">
+        <div class="text-center mb-5 text-white">
+            <h2>Our Features</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card text-center rounded-5">
+                    <img src="~/img/pet-health.png" class="card-img-top px-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Pet Health</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-center rounded-5">
+                    <img src="~/img/money-back-guarantee.png" class="card-img-top px-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Money Back Guarantee</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-center rounded-5">
+                    <img src="~/img/trust.png" class="card-img-top px-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Trust</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-center rounded-5">
+                    <img src="~/img/delivery.png" class="card-img-top px-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Delivery</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="product container px-4 py-5 rounded-3">
+        <div class="text-center mb-5">
+            <h2>Pets</h2>
+        </div>
+        <div class="row g-2">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="~/img/product/product-1.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">
+                            <a class="text-dark text-decoration-none" asp-page="Detail">Dog</a>
+                        </h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Age: 3</li>
+                        <li class="list-group-item">Color: Black</li>
+                        <li class="list-group-item text-success">Price: 450$</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="~/img/product/product-2.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">
+                            <a class="text-dark text-decoration-none" asp-page="Detail">Parrot</a>
+                        </h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Age: 4</li>
+                        <li class="list-group-item">Color: Black</li>
+                        <li class="list-group-item text-success">Price: 895$</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="~/img/product/product-3.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">
+                            <a class="text-dark text-decoration-none" asp-page="Detail">Cat</a>
+                        </h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Age: 2</li>
+                        <li class="list-group-item">Color: Black</li>
+                        <li class="list-group-item text-success">Price: 600$</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="~/img/product/product-4.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">
+                            <a class="text-dark text-decoration-none" asp-page="Detail">Fish</a>
+                        </h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Age: 1</li>
+                        <li class="list-group-item">Color: Black</li>
+                        <li class="list-group-item text-success">Price: 75$</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

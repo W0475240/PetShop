@@ -1,0 +1,25 @@
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item img {
+    height: 32rem;
+}
+
+#feature .card {
+    height: 250px;
+}
+
+#feature .card img {
+    height: 150px;
+    width: 170px;
+    margin: 15px auto 0 auto;
+}
+
+.product {
+    background-color: rgb(34 207 237 / 17%) !important;
+}
+
+.product .card img {
+    height: 350px;
+}

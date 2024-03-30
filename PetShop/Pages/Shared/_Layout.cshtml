@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Pet Shop</title>
+    <link rel="stylesheet" href="~/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PetShop.styles.css" asp-append-version="true" />
+    <link rel="icon" type="image/png" href="~/img/logo.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Pet Shop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        @RenderBody()
+
+        <footer class="mt-4">
+            <div class="container">
+                <hr>
+                <p class="float-end"><a href="#">Top</a></p>
+                <p>&copy; 2024 Pet Shop</p>
+            </div>
+
+        </footer>
+    </main>
+    <script src="~/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
